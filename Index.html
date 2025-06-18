@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sasi Boyapati — AI & ML Engineer</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- AOS animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- JS Libraries -->
+    <script defer src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+</head>
+
+<body data-theme="dark">
+
+    <!-- Particles background -->
+    <div id="particles-js"></div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>I’m <span>Sasi Boyapati</span></h1>
+            <p><span id="typed"></span></p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" data-aos="fade-right">
+        <h2>About Me</h2>
+        <p>
+            Experienced AI/ML Developer with 3+ years of hands-on expertise in designing, developing, and deploying machine learning and deep learning models using Python, TensorFlow, PyTorch, and Scikit-learn. Proficient in NLP and LLM-based applications, leveraging
+            tools such as Hugging Face, OpenCV, RAG, and LangChain. Skilled in building scalable data pipelines using SQL, Pandas, and Spark, and deploying models via Docker, AWS, and RESTful APIs. Proven ability to deliver production-ready AI solutions
+            that enhance performance, automate workflows, and drive measurable business outcomes and expertise in GenAi
+        </p>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section id="skills" data-aos="fade-left">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skills-card" data-tilt>
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skills-card" data-tilt>
+                <h3>Frameworks & Libraries</h3>
+                <ul>
+                    <li>TensorFlow</li>
+                    <li>PyTorch</li>
+                    <li>Keras</li>
+                    <li>OpenCV</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Spring Boot</li>
+                    <li>Flask</li>
+                    <li>LangChain</li>
+                    <li>Streamlit</li>
+                    <li>RAG</li>
+                </ul>
+            </div>
+            <div class="skills-card" data-tilt>
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Django</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div class="skills-card" data-tilt>
+                <h3>DevOps Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Jenkins</li>
+                    <li>JIRA</li>
+                    <li>CI/CD</li>
+                    <li>MedCoder</li>
+                    <li>MCP Protocols</li>
+                    <li>LabVIEW</li>
+                </ul>
+            </div>
+            <div class="skills-card" data-tilt>
+                <h3>AI Tools</h3>
+                <ul>
+                    <li>OpenAI API</li>
+                    <li>Microsoft Azure</li>
+                    <li>Amazon Bedrock</li>
+                    <li>Hugging Face</li>
+                    <li>AWS (EC2, S3)</li>
+                    <li>Multi-Agent Architectures</li>
+                    <li>ChromaDB</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" data-aos="fade-up">
+        <h2>Experience</h2>
+        <div class="exp-grid">
+            <div class="exp-card" data-tilt>
+                <h3>AI Developer @ Intilt</h3>
+                <span>Jan 2025 – Present</span>
+                <ul>
+                    <li>Built RAG pipelines with ChromaDB & LangChain; retrieval latency ↓ 30%.</li>
+                    <li>Designed multi-agent NLP & CV workflows using OpenAI APIs.</li>
+                    <li>Deployed Streamlit & FastAPI apps on AWS; CI/CD speed ↑ 40%.</li>
+                </ul>
+            </div>
+            <div class="exp-card" data-tilt>
+                <h3>AI Developer @ Texas Tech University</h3>
+                <span>Aug 2023 – Jan 2025</span>
+                <ul>
+                    <li>Implemented RAG pipelines (LangChain); accuracy ↑ 15%.</li>
+                    <li>Processed 1M+ records in PyTorch & TensorFlow; perf ↑ 18%.</li>
+                    <li>Deployed backend on AWS with FastAPI; response time ↓ 30%</li>
+                </ul>
+            </div>
+            <div class="exp-card" data-tilt>
+                <h3>Data Analyst Intern @ Norm Software</h3>
+                <span>May 2022 – May 2023</span>
+                <ul>
+                    <li>Analyzed EHR datasets; patient-data access ↑ 40%.</li>
+                    <li>Integrated REST APIs—100% sync & HIPAA compliance.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 data-aos="fade-up">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-tilt data-aos="zoom-in">
+                <img src="assets/projects/sign-language-conversion.jpg" alt="Sign Language Converter" />
+                <div class="card-info">
+                    <h3>Sign Language Converter</h3>
+                    <p>98% accurate CNN+OpenCV sign-to-text & text-to-voice—500+ users.</p>
+                </div>
+            </div>
+            <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/projects/voice-ai-agent.jpg" alt="Voice AI Agent" />
+                <div class="card-info">
+                    <h3>Voice AI Agent</h3>
+                    <p>LangChain & Groq API voice-activated assistant with secure activation.</p>
+                </div>
+            </div>
+            <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/projects/rag-pipeline-diagram.jpg" alt="RAG Pipeline Diagram" />
+                <div class="card-info">
+                    <h3>RAG Pipeline Diagram</h3>
+                    <p>Vector retrieval → LLM flow for real-time Q&A.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Let’s Connect</h2>
+        <form id="contact-form">
+            <input id="contact-name" type="text" name="name" placeholder="Your Name" required/>
+            <input id="contact-email" type="email" name="email" placeholder="Your Email" required/>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <div id="contact-success" class="contact-success">
+            ✅ Thanks! Your message has been sent.
+        </div>
+        <div class="socials">
+            <a href="https://linkedin.com/in/boyapatisasi" target="_blank">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/sasiboyapati" target="_blank">
+                <img src="assets/icons/github.svg" alt="GitHub" />
+            </a>
+            <p class="contact-info">
+                📞 +1 806-451-2735 ✉️ sasiboyapati.12@gmail.com
+            </p>
+        </div>
+    </section>
+
+    <!-- Chat Toggle & Widget -->
+    <button class="chat-toggle" title="Chat with me">💬</button>
+    <div class="chat-widget">
+        <div class="chat-header">
+            <h3>Chat with Me</h3>
+            <button class="chat-close">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div class="message bot">
+                Hi! I’m <strong>Sasi Boyapati</strong>, an AI/ML Developer with 3+ years of experience in deep learning, NLP, and RAG pipelines. Ask me anything about my skills, projects, or experience!
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" class="chat-input" placeholder="Type a message…" />
+            <button class="chat-send">Send</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
