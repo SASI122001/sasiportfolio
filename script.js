@@ -145,7 +145,7 @@ chatInput.addEventListener('keypress', e => {
  * PATH_A: assets/resume/SasiAIMLResume.pdf  (recommended)
  * PATH_B: resume/SasiAIMLResume.pdf         (if you keep a top-level /resume)
  */
-const PATH_A = 'assets/resume/SasiAIMLResume.pdf';
+const PATH_A = 'resume/SasiAIMLResume.pdf';
 const PATH_B = 'resume/SasiAIMLResume.pdf';
 
 // 👉 Choose ONE:
