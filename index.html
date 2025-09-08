@@ -2,242 +2,397 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sasi Boyapati — AI & ML Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sasi Boyapati — AI & ML Engineer</title>
 
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 
-    <!-- AOS animations -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- AOS animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-    <!-- JS Libraries -->
-    <script defer src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <!-- JS Libraries -->
+  <script defer src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
 
-    <!-- Custom JS -->
-    <script defer src="script.js"></script>
+  <!-- Custom JS -->
+  <script defer src="script.js"></script>
 </head>
 
-<body data-theme="dark">
+<body data-theme="dark" class="no-scroll">
+  <!-- Particles background -->
+  <div id="particles-js"></div>
 
-    <!-- Particles background -->
-    <div id="particles-js"></div>
+  <!-- ===== INTRO LOGIN GATE (first screen) ===== -->
+  <div class="intro-gate open" id="introGate" aria-hidden="false">
+    <div class="intro-bg"></div>
+    <div class="intro-wrap" data-tilt data-tilt-max="14" data-tilt-speed="600" data-tilt-glare="true" data-tilt-max-glare="0.25">
+      <div class="intro-card">
+        <div class="intro-3d">
+          <span class="cube face f1"></span>
+          <span class="cube face f2"></span>
+          <span class="cube face f3"></span>
+          <span class="cube face f4"></span>
+          <span class="cube face f5"></span>
+          <span class="cube face f6"></span>
+        </div>
+        <h1 class="intro-title">Welcome</h1>
+        <p class="intro-sub">Login to view <strong>Sasi’s portfolio</strong></p>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content" data-aos="fade-up">
-            <h1>I’m <span>Sasi Boyapati</span></h1>
-            <p><span id="typed"></span></p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
+        <button class="intro-btn" id="introEnterBtn">
+          <span class="btn-shine"></span>
+          <span>Enter Portfolio</span>
+        </button>
 
-    <!-- About Me -->
-    <section id="about" data-aos="fade-right">
-        <h2>About Me</h2>
-        <p>
-            Experienced AI/ML Developer with 4+ years of hands-on expertise in designing, developing, and deploying machine learning and deep learning models using Python, TensorFlow, PyTorch, and Scikit-learn. Proficient in NLP and LLM-based applications, leveraging
-            tools such as Hugging Face, OpenCV, RAG, and LangChain. Skilled in building scalable data pipelines using SQL, Pandas, and Spark, and deploying models via Docker, AWS, and RESTful APIs. Proven ability to deliver production-ready AI solutions
-            that enhance performance, automate workflows, and drive measurable business outcomes and expertise in GenAi
-        </p>
-    </section>
+        <label class="remember">
+          <input type="checkbox" id="rememberIntro" />
+          <span>Remember me</span>
+        </label>
 
-    <!-- Skills & Tools -->
-    <section id="skills" data-aos="fade-left">
-        <h2>Skills & Tools</h2>
-        <div class="skills-grid">
-            <div class="skills-card" data-tilt>
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            <div class="skills-card" data-tilt>
-                <h3>Frameworks & Libraries</h3>
-                <ul>
-                    <li>TensorFlow</li>
-                    <li>PyTorch</li>
-                    <li>Keras</li>
-                    <li>OpenCV</li>
-                    <li>Pandas</li>
-                    <li>NumPy</li>
-                    <li>Spring Boot</li>
-                    <li>Flask</li>
-                    <li>LangChain</li>
-                    <li>Streamlit</li>
-                    <li>RAG</li>
-                </ul>
-            </div>
-            <div class="skills-card" data-tilt>
-                <h3>Web Development</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Angular</li>
-                    <li>React</li>
-                    <li>Django</li>
-                    <li>Node.js</li>
-                </ul>
-            </div>
-            <div class="skills-card" data-tilt>
-                <h3>DevOps Tools</h3>
-                <ul>
-                    <li>Git</li>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>Jenkins</li>
-                    <li>JIRA</li>
-                    <li>CI/CD</li>
-                    <li>MedCoder</li>
-                    <li>MCP Protocols</li>
-                    <li>LabVIEW</li>
-                </ul>
-            </div>
-            <div class="skills-card" data-tilt>
-                <h3>AI Tools</h3>
-                <ul>
-                    <li>OpenAI API</li>
-                    <li>Microsoft Azure</li>
-                    <li>Amazon Bedrock</li>
-                    <li>Hugging Face</li>
-                    <li>AWS (EC2, S3)</li>
-                    <li>Multi-Agent Architectures</li>
-                    <li>ChromaDB</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <p class="intro-hint">No username or password — just vibes ✨</p>
+      </div>
+    </div>
+  </div>
+  <!-- ===== /INTRO LOGIN GATE ===== -->
 
-    <!-- Experience -->
-    <section id="experience" data-aos="fade-up">
-        <h2>Experience</h2>
-        <div class="exp-grid">
-            <div class="exp-card" data-tilt>
-                <h3>AI Developer @ UnitedHealth Group</h3>
-                <span>Jan 2024 – Present</span>
-                <ul>
-                    <li>Led the development of an AI-powered claims adjudication system using NLP and deep learning models (BERT, RoBERTa) to extract
-structured data from unstructured claims documents, improving claim processing accuracy by 28% and reducing manual review effort
-by 40%.</li>
-                    <li>Architected a fraud, waste, and abuse detection pipeline leveraging Gradient Boosting and anomaly detection algorithms, flagging
-suspicious claims with 93% precision and enabling anticipatory fraud prevention worth over $3.2M annually.</li>
-                    <li>Devised HIPAA-compliant MLOps workflows on AWS SageMaker and EKS for training, deployment, and monitoring of healthcare AI
-models, reducing model deployment time from 3 weeks to 5 days.</li>
-                    <li>Created a real-time patient risk stratification model using ensemble learning techniques to predict high-cost members, enabling targeted
-care interventions and improving care plan adherence by 17%.</li>
-                    <li>Applied OCR-based EHR ingestion system integrated with OpenCV and AWS Textract, achieving 99.5% data extraction accuracy and
-reducing processing latency for large health records by 35%.</li>
-                    <li>Constructed interactive analytics dashboards in Power BI to monitor AI-driven claims, fraud alerts, and patient risk scores in real time,
-enabling leadership to take faster, data-driven decisions.</li>
-                </ul>
-            </div>
-            <div class="exp-card" data-tilt>
-                <h3>AI Developer @ Texas Tech University</h3>
-                <span>Aug 2023 – Jan 2024</span>
-                <ul>
-                    <li>Formulated and implemented advanced LLM-based applications using LangChain, including multi-agent architectures and RAG pipelines, improving contextual retrieval accuracy by ↑ 15% and reducing response time by 30% through task automation.</li>
-                    <li>Led end-to-end development of NLP systems, including data preprocessing, feature engineering, and augmentation for large-scale datasets (1M+ records); improved model performance by ↑ 18% through hyperparameter tuning.</li>
-                    <li>Deployed scalable AI solutions using PyTorch, TensorFlow, FastAPI, and AWS, collaborating with cross-functional teams to integrate transformer models, resulting in 20% faster deployment cycles and enhancing production system accuracy by 12%.</li>
-                </ul>
-            </div>
-            <div class="exp-card" data-tilt>
-                <h3>AI Developer @ Intilt</h3>
-                <span>May 2021 – May 2023</span>
-                <ul>
-                    <li>Orchestrated the Insurance Application – MSBeyond initiative, architecting an AI-driven policy and claims management platform that
-streamlined end-to-end insurance operations for over 50,000 active policies.</li>
-                    <li>Revitalized a claims automation engine leveraging OCR, NLP, and fraud detection models, reducing claim settlement turnaround time by 38%
-and improving fraud detection accuracy to 92%..</li>
-                    <li>Produced a personalized policy recommendation system using Gradient Boosting and XGBoost algorithms, which increased cross-sell
-conversion rates by 20% and Augmented customer retention.</li>
-                    <li>Delivered real-time premium prediction models powered by regression-based ML pipelines, achieving 98% accuracy in premium estimation
-across varied risk profiles.</li>
-                    <li>Integrated secure payment gateway APIs with PCI DSS compliance and Systematized invoice generation, improving payment processing
-efficiency by 35%.</li>
-                    <li>Executed the entire CI/CD lifecycle using AWS CodePipeline and CodeBuild, enabling zero-downtime deployments and Digitized rollback
-mechanisms for risk mitigation.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- Hero -->
+  <section id="hero" aria-live="polite">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>I’m <span>Sasi Boyapati</span></h1>
+      <p><span id="typed"></span></p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2 data-aos="fade-up">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card" data-tilt data-aos="zoom-in">
-                <img src="assets/projects/sign-language-conversion.jpg" alt="Sign Language Converter" />
-                <div class="card-info">
-                    <h3>Sign Language Converter</h3>
-                    <p>98% accurate CNN+OpenCV sign-to-text & text-to-voice—500+ users.</p>
-                </div>
-            </div>
-            <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="100">
-                <img src="assets/projects/voice-ai-agent.jpg" alt="Voice AI Agent" />
-                <div class="card-info">
-                    <h3>Voice AI Agent</h3>
-                    <p>LangChain & Groq API voice-activated assistant with secure activation.</p>
-                </div>
-            </div>
-            <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="200">
-                <img src="assets/projects/rag-pipeline-diagram.jpg" alt="RAG Pipeline Diagram" />
-                <div class="card-info">
-                    <h3>RAG Pipeline Diagram</h3>
-                    <p>Vector retrieval → LLM flow for real-time Q&A.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- About -->
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+      AI/ML Developer with 3+ years designing, building, and shipping production ML systems across NLP, LLMs, and computer
+      vision. Hands-on with Python, PyTorch, TensorFlow, and scikit-learn; strong in RAG and LangChain-based LLM apps; and
+      comfortable taking models to production via FastAPI/Flask, Docker, and AWS (SageMaker, EC2, Bedrock). I focus on measurable
+      outcomes: higher accuracy, faster deployment, and real business impact.
+    </p>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" data-aos="fade-up">
-        <h2>Let’s Connect</h2>
-        <form id="contact-form">
-            <input id="contact-name" type="text" name="name" placeholder="Your Name" required/>
-            <input id="contact-email" type="email" name="email" placeholder="Your Email" required/>
-            <textarea id="contact-message" name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
-        <div id="contact-success" class="contact-success">
-            ✅ Thanks! Your message has been sent.
-        </div>
-        <div class="socials">
-            <a href="https://linkedin.com/in/boyapatisasi" target="_blank">
-                <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/sasiboyapati" target="_blank">
-                <img src="assets/icons/github.svg" alt="GitHub" />
-            </a>
-            <p class="contact-info">
-                📞 +1 806-451-2735 ✉️ sasiboyapati.12@gmail.com
-            </p>
-        </div>
-    </section>
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-left">
+    <h2>Skills &amp; Tools</h2>
+    <div class="skills-grid pretty">
+      <div class="skills-card pretty" data-tilt>
+        <h3>Programming</h3>
+        <ul class="chips">
+          <li class="chip">Python</li>
+          <li class="chip">SQL</li>
+          <li class="chip">Java</li>
+          <li class="chip">R</li>
+          <li class="chip">TypeScript</li>
+          <li class="chip">JavaScript</li>
+        </ul>
+      </div>
 
-    <!-- Chat Toggle & Widget -->
-    <button class="chat-toggle" title="Chat with me">💬</button>
-    <div class="chat-widget">
-        <div class="chat-header">
-            <h3>Chat with Me</h3>
-            <button class="chat-close">&times;</button>
+      <div class="skills-card pretty" data-tilt>
+        <h3>ML &amp; DL</h3>
+        <ul class="chips">
+          <li class="chip">PyTorch</li>
+          <li class="chip">TensorFlow</li>
+          <li class="chip">Keras</li>
+          <li class="chip">scikit-learn</li>
+          <li class="chip">Hugging Face</li>
+          <li class="chip">LangChain</li>
+          <li class="chip">LlamaIndex</li>
+          <li class="chip">OpenCV</li>
+        </ul>
+      </div>
+
+      <div class="skills-card pretty" data-tilt>
+        <h3>NLP &amp; Techniques</h3>
+        <ul class="chips">
+          <li class="chip">GPT</li>
+          <li class="chip">BERT</li>
+          <li class="chip">LSTM/RNN/CNN</li>
+          <li class="chip">Word2Vec</li>
+          <li class="chip">GloVe</li>
+          <li class="chip">RAG</li>
+          <li class="chip">Anomaly Detection</li>
+          <li class="chip">Time-Series</li>
+          <li class="chip">BLEU</li>
+          <li class="chip">ROUGE</li>
+          <li class="chip">METEOR</li>
+        </ul>
+      </div>
+
+      <div class="skills-card pretty" data-tilt>
+        <h3>Data &amp; Viz</h3>
+        <ul class="chips">
+          <li class="chip">Pandas</li>
+          <li class="chip">NumPy</li>
+          <li class="chip">Spark</li>
+          <li class="chip">Databricks</li>
+          <li class="chip">PostgreSQL</li>
+          <li class="chip">Snowflake</li>
+          <li class="chip">Tableau</li>
+          <li class="chip">Power BI</li>
+          <li class="chip">Matplotlib</li>
+        </ul>
+      </div>
+
+      <div class="skills-card pretty" data-tilt>
+        <h3>Cloud &amp; DevOps</h3>
+        <ul class="chips">
+          <li class="chip">AWS (SageMaker, EC2, Bedrock)</li>
+          <li class="chip">Docker</li>
+          <li class="chip">Kubernetes</li>
+          <li class="chip">Jenkins</li>
+          <li class="chip">CI/CD</li>
+          <li class="chip">Pinecone</li>
+          <li class="chip">FAISS</li>
+          <li class="chip">ChromaDB</li>
+        </ul>
+      </div>
+
+      <div class="skills-card pretty" data-tilt>
+        <h3>Web &amp; APIs</h3>
+        <ul class="chips">
+          <li class="chip">FastAPI</li>
+          <li class="chip">Flask</li>
+          <li class="chip">Django</li>
+          <li class="chip">React</li>
+          <li class="chip">Angular</li>
+          <li class="chip">REST</li>
+          <li class="chip">WebSockets</li>
+        </ul>
+      </div>
+
+      <div class="skills-card pretty" data-tilt>
+        <h3>Emerging</h3>
+        <ul class="chips">
+          <li class="chip">Multi-Agent Systems</li>
+          <li class="chip">Web3/DeFi (Ethers.js, Viem)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="exp-grid">
+      <div class="exp-card" data-tilt>
+        <h3>AI Developer @ UnitedHealth Group</h3>
+        <span>Jan 2024 – Present</span>
+        <ul>
+          <li>Built BERT-based claims adjudication (+28% accuracy) cutting manual review −40%.</li>
+          <li>Fraud/Waste/Abuse pipeline with Gradient Boosting + anomaly detection (93% precision), saving $3.2M+ annually.</li>
+          <li>HIPAA-compliant MLOps on SageMaker + EKS, reducing deploy time 3 weeks → 5 days.</li>
+          <li>Risk stratification for high-cost members (+17% care plan adherence).</li>
+          <li>OCR EHR ingestion (OpenCV + Textract) at 99.5% extraction accuracy; −35% latency.</li>
+          <li>Power BI dashboards for claims, fraud alerts, and risk scores.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card" data-tilt>
+        <h3>AI Developer @ Texas Tech University</h3>
+        <span>Aug 2023 – Jan 2024</span>
+        <ul>
+          <li>LangChain + RAG pipelines (+15% contextual retrieval, −30% latency).</li>
+          <li>NLP systems over 1M+ records; +18% accuracy with advanced tuning.</li>
+          <li>PyTorch/TF + FastAPI + AWS; 20% faster deploy cycles, +12% prod accuracy.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card" data-tilt>
+        <h3>AI Engineer @ Intilt</h3>
+        <span>May 2021 – May 2023</span>
+        <ul>
+          <li>Launched MSBeyond insurance platform (50K+ active policies) with end-to-end automation.</li>
+          <li>Claims OCR+NLP engine: −38% TAT, 92% fraud accuracy.</li>
+          <li>Premium prediction (regression) at ~98% accuracy; microservices on FastAPI + Docker + AWS.</li>
+          <li>PostgreSQL warehouse (−45% ETL latency) and real-time KPI dashboards.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 data-aos="fade-up">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-tilt data-aos="zoom-in">
+        <img src="assets/projects/sign-language-conversion.jpg" alt="Sign Language Converter" />
+        <div class="card-info">
+          <h3>Sign Language Converter</h3>
+          <p>Real-time CNN+LSTM translator (≈98%); sign-to-text + TTS; 500+ users.</p>
         </div>
-        <div class="chat-body">
-            <div class="message bot">
-                Hi! I’m <strong>Sasi Boyapati</strong>, an AI/ML Developer with 3+ years of experience in deep learning, NLP, and RAG pipelines. Ask me anything about my skills, projects, or experience!
-            </div>
+      </div>
+
+      <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/projects/voice-ai-agent.jpg" alt="Voice AI Agent" />
+        <div class="card-info">
+          <h3>Voice AI Agent</h3>
+          <p>Groq API + LangChain voice agent; function calling &lt;200ms; wake-word secure.</p>
         </div>
-        <div class="chat-footer">
-            <input type="text" class="chat-input" placeholder="Type a message…" />
-            <button class="chat-send">Send</button>
+      </div>
+
+      <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/projects/rag-pipeline-diagram.jpg" alt="RAG Pipeline Diagram" />
+        <div class="card-info">
+          <h3>RAG Pipeline</h3>
+          <p>Vector retrieval → LLM flow for low-latency, context-aware Q&amp;A.</p>
         </div>
+      </div>
+
+      <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="250">
+        <img src="assets/projects/assets/projects/llm-math.jpg" alt="LLM Mathematical Reasoning" />
+        <div class="card-info">
+          <h3>LLM Mathematical Reasoning</h3>
+          <p>PPO-tuned GPT-3.5/LLaMA-7B; 93.4% on financial &amp; STEM reasoning benchmarks.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/projects/assets/projects/predictive-analytics.jpg" alt="Predictive Customer Analytics" />
+        <div class="card-info">
+          <h3>Predictive Customer Analytics</h3>
+          <p>Churn &gt;0.90 AUC; LSTM/Prophet forecasting (+30% planning); hybrid recommenders (+12%).</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="350">
+        <img src="assets/projects/assets/projects/equity-research.jpg" alt="EquityResearchTool" />
+        <div class="card-info">
+          <h3>EquityResearchTool</h3>
+          <p>Sharpe, MaxDD, Beta; valuation (ROA/ROE/D-E) + LLM commentary &amp; visuals.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/projects/assets/projects/claims-fraud.jpg" alt="Claims & Fraud Platform" />
+        <div class="card-info">
+          <h3>Claims &amp; Fraud Platform</h3>
+          <p>BERT adjudication (+28%); fraud 93% precision; $3.2M+ annual savings.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-tilt data-aos="zoom-in" data-aos-delay="450">
+        <img src="assets/projects/assets/projects/domain-ner.jpg" alt="Domain NER & Literature Mining" />
+        <div class="card-info">
+          <h3>Domain NER &amp; Literature Mining</h3>
+          <p>Custom transformers for NER (≈92% F1) cutting manual review 12h → 3h/week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <article class="cert-card">
+        <header>
+          <h3>AWS Certified AI Practitioner</h3>
+          <span class="cert-year">2025</span>
+        </header>
+        <p class="issuer">Amazon Web Services</p>
+      </article>
+
+      <article class="cert-card">
+        <header>
+          <h3>Amazon Bedrock — Getting Started with Generative AI</h3>
+          <span class="cert-year">2025</span>
+        </header>
+        <p class="issuer">Coursera</p>
+      </article>
+
+      <article class="cert-card">
+        <header>
+          <h3>Master Generative AI: Professional LLM App Dev</h3>
+          <span class="cert-year">2025</span>
+        </header>
+        <p class="issuer">Euron</p>
+      </article>
+
+      <article class="cert-card">
+        <header>
+          <h3>AI Extern</h3>
+          <span class="cert-year">2024</span>
+        </header>
+        <p class="issuer">AT&amp;T</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Let’s Connect</h2>
+    <form id="contact-form">
+      <input id="contact-name" type="text" name="name" placeholder="Your Name" required />
+      <input id="contact-email" type="email" name="email" placeholder="Your Email" required />
+      <textarea id="contact-message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div id="contact-success" class="contact-success">✅ Thanks! Your message has been sent.</div>
+    <div class="socials">
+      <a href="https://linkedin.com/in/boyapatisasi" target="_blank">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/sasiboyapati" target="_blank">
+        <img src="assets/icons/github.svg" alt="GitHub" />
+      </a>
+      <p class="contact-info">📞 +1 806-451-2735 ✉️ sasiboyapati.12@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- Chat Toggle & Widget -->
+  <button class="chat-toggle" title="Chat with me">💬</button>
+  <div class="chat-widget">
+    <div class="chat-header">
+      <h3>Chat with Me</h3>
+      <button class="chat-close">&times;</button>
+    </div>
+    <div class="chat-body">
+      <div class="message bot">
+        Hi! I’m <strong>Sasi Boyapati</strong>, an AI/ML Developer focused on LLMs, CV, and MLOps.
+        Ask me about my skills, projects, or experience!
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" class="chat-input" placeholder="Type a message…" />
+      <button class="chat-send">Send</button>
+    </div>
+  </div>
+
+  <!-- Floating Resume Button -->
+  <button class="resume-fab" id="openResumeGate" aria-label="Open resume gate">🪪 RESUME</button>
+
+  <!-- Resume Gate Overlay -->
+  <div class="resume-gate" id="resumeGate" aria-hidden="true">
+    <div class="gate-bg"></div>
+
+    <div class="gate-wrap" data-tilt data-tilt-max="12" data-tilt-speed="600" data-tilt-glare="true" data-tilt-max-glare="0.25">
+      <div class="gate-card">
+        <div class="gate-face gate-front">
+          <div class="gate-chip"></div>
+          <h3>Identity Check</h3>
+          <p class="gate-sub">Secure access to <strong>Resume</strong></p>
+          <button class="gate-btn" id="gateEnterBtn">
+            <span class="btn-shine"></span>
+            <span class="btn-text">Login</span>
+          </button>
+          <p class="hint">No password needed — just a cool entrance ✨</p>
+        </div>
+        <div class="gate-face gate-back">
+          <div class="gate-unlocked">Unlocked 🔓</div>
+        </div>
+      </div>
     </div>
 
+    <button class="gate-close" id="gateCloseBtn" aria-label="Close resume gate">×</button>
+  </div>
 </body>
-
 </html>
